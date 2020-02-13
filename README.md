@@ -1,9 +1,6 @@
-# Loan Default Prediction
+# Diabetes Readmission Prediction
 
-In this project, we determine whether a loan will default, as well as the loss incurred if it does default. 
+In this project, we are predicting whether a diabetic patient would be readmitted to the hospital or not. It is important to know if a patient will be readmitted in some hospital. The reason is that the doctor or patient can change the treatment, in order to avoid a readmission.
 
-Unlike traditional finance-based approaches to this problem, where one distinguishes between good or bad counterparties in a binary way, we seek to anticipate and incorporate both the default and the severity of the losses that result. 
+In this context, we can see different objective functions for the problem. We can try to figure out situations where the patient will not be readmitted, or if they are going to be readmitted in less than or in more than 30 days.
 
-In doing so, we are building a bridge between traditional banking, where we are looking at reducing the consumption of economic capital, to an asset-management perspective, where we optimize on the risk to the financial investor.
-
-The dataset corresponds to a set of financial transactions associated with individuals.
