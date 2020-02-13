@@ -47,12 +47,12 @@ VARIABLE NAMES: DESCRIPTION
 20. Diagnosis 2: Secondary diagnosis
 21. Diagnosis 3: Additional secondary diagnosis
 22. Number of diagnoses: Number of diagnoses entered to the system
-23. Glucose serum test result: Indicates the range of the result or if the test was not taken.
-24. A1c test result: Indicates the range of the result or if the test was not taken.
-25. Change of medications: Indicates if there was a change in diabetic medications (either dosage or generic name). 
-26. Diabetes medications: Indicates if there was any diabetic medication prescribed.
-27. 24 features for medications: The feature indicates whether the drug was prescribed or there was a change in the dosage.
-28. Readmitted: Days to inpatient readmission.
+23. Glucose serum test result: Indicates the range of the result or if the test was not taken
+24. A1c test result: Indicates the range of the result or if the test was not taken
+25. Change of medications: Indicates if there was a change in diabetic medications (either dosage or generic name)
+26. Diabetes medications: Indicates if there was any diabetic medication prescribed
+27. 24 features for medications: The feature indicates whether the drug was prescribed or there was a change in the dosage
+28. Readmitted: Days to inpatient readmission
 
 ## Technologies and algorithms
 Technologies: Spark
