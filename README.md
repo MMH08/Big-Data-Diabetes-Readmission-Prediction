@@ -3,14 +3,15 @@
 # Abstract
 A diabetic clinical dataset will be used to predict whether a diabetic patient would be readmitted to the hospital or not. It is important to know if a patient will be readmitted in some hospital. The reason is that the doctor or patient can change the treatment, in order to avoid a readmission. In this context, we can see different objective functions for the problem. We can try to figure out situations where the patient will not be readmitted, or if they are going to be readmitted in less than or in more than 30 days. As the data includes race, age and sex, so we will also determine the vulnerable group among them. Apache Spark cluster-computing framework will be utilized to build the models. The language for this project would be Python. The Multivariable Logistic Regression (MLR) and Random Forest (RF) algorithms will be used to fit the relationship. We will also evaluate the performance of the algorithms.
 
-# Introduction and Context
-A hospital readmission is when a patient who is discharged from the hospital, gets re-admitted again within a certain period of time. Hospital readmission rates for certain conditions are now considered an indicator of hospital quality, and also affect the cost of care adversely. For this reason, Centers for Medicare & Medicaid Services established the Hospital Readmissions Reduction Program which aims to improve quality of care for patients and reduce health care spending by applying payment penalties to hospitals that have more than expected readmission rates for certain conditions. Although diabetes is not yet included in the penalty measures, the program is regularly adding new disease conditions to the list, now totaling 6 for FY2018. In 2011, American hospitals spent over $41 billion on diabetic patients who got readmitted within 30 days of discharge.
-
+# Introduction
+## Context
+After getting discharged from a hospital within a certain amount of time if a patient gets readmitted again that is considered as a hospital readmission. Hospital readmission rate can be a major indicator of patient’s health, hospital quality and cost of treatment. For example, if a patient was never been re-admitted, it’s a very good sign. Whereas if the patient is re-admitted within the 30 days of discharge represents a possibility of inappropriate treatment. On the other hand, getting readmitted after 30 days can indicate both the quality of treatment given and/or the state of the patient.
+## Problem statement
+In order to determine the factors that lead to higher readmission of patients, we will be analyzing a dataset, that represents 10 years (1999-2008) of clinical care at 130 US hospitals and integrated delivery networks.  Analysis of this valuable but heterogeneous and difficult data is challenging as it has missing value and contains inconsistent records. Nonetheless, it is very important to utilize these huge amounts of medical data to find new information.
 ## Objective
-Being able to determine factors that lead to higher readmission in such patients, and correspondingly being able to predict which patients will get readmitted can help hospitals save millions of dollars while improving quality of care. So, with that background in mind, we used a medical claims dataset (description below), to answer these questions:
-
-(1) What factors are the strongest predictors of hospital readmission in diabetic patients?
-(2) How well can we predict hospital readmission in this dataset with limited features?
+Being able to determine factors that lead to higher readmission in such patients, and correspondingly being able to predict which patients will get readmitted can help hospitals save millions of dollars while improving quality of care. So, with that background in mind, we used the dataset to answer these two questions. First, what kind of factor will be the greatest predictor of hospital readmission in diabetic patients and secondly how the limited feature in the dataset could compromise the quality of the predictions of hospital readmission.
+## Related Work
+Several research work and analysis has been conducted with this dataset, most notably the study to determine the impact of Hba1c in hospital readmission rate [1]. Some analysis has also be performed on the [Kaggle dataset]( https://www.kaggle.com/iabhishekofficial/prediction-on-hospital-readmission) to predict hospital re-admissibility. 
 
 # Materials and Methods
 ## Dataset
