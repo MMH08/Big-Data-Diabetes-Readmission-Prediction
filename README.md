@@ -32,7 +32,6 @@ Now, the new dataset contain 101,766 encounters for to analyze factors related t
 In our project, we will be using this new dataset and details of data can be found our  reference paper [1]. The dataset is available in online https://www.hindawi.com/journals/bmri/2014/781670/ (as a Supplementary Material) and UCI Machine Learning Repository  (https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008). 
 
 ## Technologies and algorithms
-Technologies: Spark
-Algorithms: Supervised Learning: Multivariate Logistic Regression, Random Forest
+The most widely used, fast, flexible and user friendly cluster-computing framework, Apache Spark, will be utilized to run. The language for this project would be Python. The Multivariable Logistic Regression (MLR) and Random Forest (RF) algorithms will be used to fit the relationship between the measurement of HbA1c and type of readmission. MLR is easy to implement and RF is perfect for both cluster-computing and parallel-computing as each tree is independent each others and can run independently. We will also evaluate both of these algorithms. 
 
 
