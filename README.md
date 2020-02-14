@@ -19,40 +19,19 @@ Beata Strack, Jonathan P. DeShazo, Chris Gennings, Juan L. Olmo, Sebastian Ventu
 
 # Materials and Methods
 ## Dataset
+
+
+A 10 years of clinical care diabetic dataset from the Health Facts database (CERNER Corporation, Kansas City, MO) is used in this project. Initially, the data was collected by Center for Clinical and Translational Research, Virginia Commonwealth University on behalf of CERNER throughout 130 USA hospitals and integrated delivery networks over the period between 1999 to 2008. Midwest (18 hospitals), Northeast (58), South (28), and West (16). As the the actual data is gathered by integrated delivery network health systems, so it includes all patients information. So, for specific interest it was required to extract new dataset from the database by following some specific criteria:  
+(1) It is an inpatient encounter (a hospital admission).
+(2) It is a diabetic encounter, that is, one during which any kind of diabetes was entered to the system as a diagnosis.
+(3) The length of stay was at least 1 day and at most 14 days.
+(4) Laboratory tests were performed during the encounter.
+(5) Medications were administered during the encounter.
+
+Now, the new dataset contain 101,766 encounters for to analyze factors related to readmission as well as other outcomes pertaining to patients with diabetes. From the information available in the database, 55 features that describe the diabetic encounters were picked. The few of the attributes are patient number, race, gender, age, admission type, duration of stay in hospital, lab test, HbA1c test result, diagnosis, number of medication, diabetic medications. 
+In our project, we will be using this new dataset and details of data can be found our  reference paper [1]. The dataset is available in online https://www.hindawi.com/journals/bmri/2014/781670/ (as a Supplementary Material) and UCI Machine Learning Repository  (https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008). 
+
 The dataset represents 10 years (1999-2008) of clinical care at 130 US hospitals and integrated delivery networks. It includes over 50 features representing patient and hospital outcomes.
-
-Original source of the dataset: https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008
-
-VARIABLE NAMES: DESCRIPTION
-
-1. Encounter ID: Unique identifier of an encounter
-2. Patient number: Unique identifier of a patient
-3. Race Values: Caucasian, Asian, African American, Hispanic, and other
-4. Gender Values: male, female, and unknown/invalid
-5. Age Grouped in 10-year intervals
-6. Weight: Weight in pounds
-7. Admission type: Integer identifier corresponding to 9 distinct values, for example, emergency, urgent, elective, newborn, and not available
-8. Discharge disposition: Integer identifier corresponding to 29 distinct values, for example, discharged to home, expired, and not available
-9. Admission source: Integer identifier corresponding to 21 distinct values, for example, physician referral, emergency room, and transfer from a hospital
-10. Time in hospital: Integer number of days between admission and discharge
-11. Payer code: Integer identifier corresponding to 23 distinct values, for example, Blue Cross/Blue Shield, Medicare, and self-pay Medical
-12. Medical specialty: Integer identifier of a specialty of the admitting physician, corresponding to 84 distinct values, for example, cardiology, internal medicine, family/general practice, and surgeon
-13. Number of lab procedures: Number of lab tests performed during the encounter
-14. Number of procedures: Numeric Number of procedures (other than lab tests) performed during the encounter
-15. Number of medications: Number of distinct generic names administered during the encounter
-16. Number of outpatient visits: Number of outpatient visits of the patient in the year preceding the encounter
-17. Number of emergency visits: Number of emergency visits of the patient in the year preceding the encounter
-18. Number of inpatient visits: Number of inpatient visits of the patient in the year preceding the encounter
-19. Diagnosis 1: The primary diagnosis
-20. Diagnosis 2: Secondary diagnosis
-21. Diagnosis 3: Additional secondary diagnosis
-22. Number of diagnoses: Number of diagnoses entered to the system
-23. Glucose serum test result: Indicates the range of the result or if the test was not taken
-24. A1c test result: Indicates the range of the result or if the test was not taken
-25. Change of medications: Indicates if there was a change in diabetic medications (either dosage or generic name)
-26. Diabetes medications: Indicates if there was any diabetic medication prescribed
-27. 24 features for medications: The feature indicates whether the drug was prescribed or there was a change in the dosage
-28. Readmitted: Days to inpatient readmission
 
 ## Technologies and algorithms
 Technologies: Spark
