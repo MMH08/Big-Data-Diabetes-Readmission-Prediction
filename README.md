@@ -19,9 +19,8 @@ Beata Strack, Jonathan P. DeShazo, Chris Gennings, Juan L. Olmo, Sebastian Ventu
 
 # Materials and Methods
 ## Dataset
+A 10 years of clinical care diabetic dataset from the Health Facts database (CERNER Corporation, Kansas City, MO) is used in this project. Initially, the data was collected by Center for Clinical and Translational Research, Virginia Commonwealth University on behalf of CERNER throughout 130 USA hospitals and integrated delivery networks over the period between 1999 to 2008. As the the actual data is gathered by integrated delivery network health systems, so it includes all patients information. So, for specific interest it was required to extract new dataset from the database by following some specific criteria:  
 
-
-A 10 years of clinical care diabetic dataset from the Health Facts database (CERNER Corporation, Kansas City, MO) is used in this project. Initially, the data was collected by Center for Clinical and Translational Research, Virginia Commonwealth University on behalf of CERNER throughout 130 USA hospitals and integrated delivery networks over the period between 1999 to 2008. Midwest (18 hospitals), Northeast (58), South (28), and West (16). As the the actual data is gathered by integrated delivery network health systems, so it includes all patients information. So, for specific interest it was required to extract new dataset from the database by following some specific criteria:  
 (1) It is an inpatient encounter (a hospital admission).
 (2) It is a diabetic encounter, that is, one during which any kind of diabetes was entered to the system as a diagnosis.
 (3) The length of stay was at least 1 day and at most 14 days.
@@ -29,9 +28,8 @@ A 10 years of clinical care diabetic dataset from the Health Facts database (CER
 (5) Medications were administered during the encounter.
 
 Now, the new dataset contain 101,766 encounters for to analyze factors related to readmission as well as other outcomes pertaining to patients with diabetes. From the information available in the database, 55 features that describe the diabetic encounters were picked. The few of the attributes are patient number, race, gender, age, admission type, duration of stay in hospital, lab test, HbA1c test result, diagnosis, number of medication, diabetic medications. 
-In our project, we will be using this new dataset and details of data can be found our  reference paper [1]. The dataset is available in online https://www.hindawi.com/journals/bmri/2014/781670/ (as a Supplementary Material) and UCI Machine Learning Repository  (https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008). 
 
-The dataset represents 10 years (1999-2008) of clinical care at 130 US hospitals and integrated delivery networks. It includes over 50 features representing patient and hospital outcomes.
+In our project, we will be using this new dataset and details of data can be found our  reference paper [1]. The dataset is available in online https://www.hindawi.com/journals/bmri/2014/781670/ (as a Supplementary Material) and UCI Machine Learning Repository  (https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008). 
 
 ## Technologies and algorithms
 Technologies: Spark
