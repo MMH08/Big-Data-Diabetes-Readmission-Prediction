@@ -1,7 +1,7 @@
 # Diabetes Readmission Prediction
 
 # Abstract
-A diabetic clinical dataset will be used to predict whether a diabetic patient would be readmitted to the hospital or not. It is important to know if a patient will be readmitted in some hospital. The reason is that the doctor or patient can change the treatment, in order to avoid a readmission. In this context, we can see different objective functions for the problem. We can try to figure out situations where the patient will not be readmitted, or if they are going to be readmitted in less than or in more than 30 days. As the data includes race, age and sex, so we will also determine the vulnerable group among them. Apache Spark cluster-computing framework will be utilized to build the models. The language for this project would be Python. The Multivariable Logistic Regression (MLR) and Random Forest (RF) algorithms will be used to fit the relationship. We will also evaluate the performance of the algorithms.
+A diabetic clinical dataset is used to identify the patients who are in risk for readmission to the hospital by using predictive models.  A supervised learning approach for 3-class classification problem will be applied to identify the patients of target classes are the patients readmitted before 30 days (Class 0) , after 30 days (Class 1) or did not admit at all (Class 2) after discharge from hospital. The Logistic Regression (LR), Decision Tree (DT) and Random Forest (RF) algorithms will be used to fit the relationship. We will also evaluate the performance among the algorithms to pick best one. Python, scikit-learn machine learning library, pandas dataframe will be utilized to build the models.
 
 # Introduction
 ## Context
