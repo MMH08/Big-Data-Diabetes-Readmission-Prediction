@@ -34,6 +34,7 @@ In our project, we will be using this new dataset and details of data can be fou
 The most widely used, fast, flexible and user friendly cluster-computing framework, Apache Spark, will be utilized to run. The language for this project would be Python. The Multivariable Logistic Regression (MLR) and Random Forest (RF) algorithms will be used to fit the relationship between the measurement of HbA1c and type of readmission. MLR is easy to implement and RF is perfect for both cluster-computing and parallel-computing as each tree is independent each others and can run independently. We will also evaluate both of these algorithms. 
 
 # References
+
 [1] https://www.hindawi.com/journals/bmri/2014/781670/  \ 
 [2] https://www.hindawi.com/journals/bmri/2019/8532892/ \
 [3] https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2014.0041url_ver=Z39.882003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub%3Dpubmed& \
