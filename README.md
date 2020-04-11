@@ -45,7 +45,7 @@ The dataset has been split into 70% for training and 30% for testing.
 
 
 ## With and without sampling comparison
-![cm_lg](/Figure/Results.png)
+![](/Figure/Results.PNG)
 
 ## Balanced Data
 
