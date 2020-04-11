@@ -54,10 +54,9 @@ The dataset has been split into 70% for training and 30% for testing.
 ## Correlation Matrix
 ![](/Figure/Correlation_Matrix.PNG)
 
-## Balanced Data
 
 # Conclusion
-
+For future works, in case our dataset size grows and doesn’t fit in the memory, and includes other patient history as well, we can use Apache spark for better computation power and faster processing. We can even try to use Neural networks to further improve the model performance.
 
 # References
 
