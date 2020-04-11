@@ -34,19 +34,19 @@ In our project, we will be using this new dataset and details of data can be fou
 The most widely used, fast, flexible and user friendly cluster-computing framework, Apache Spark, will be utilized to run. The language for this project would be Python. The Multivariable Logistic Regression (MLR) and Random Forest (RF) algorithms will be used to fit the relationship between the measurement of HbA1c and type of readmission. MLR is easy to implement and RF is perfect for both cluster-computing and parallel-computing as each tree is independent each others and can run independently. We will also evaluate both of these algorithms. 
 
 # References
-[1] https://www.hindawi.com/journals/bmri/2014/781670/  \\
-[2] https://www.hindawi.com/journals/bmri/2019/8532892/
-[3] https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2014.0041url_ver=Z39.882003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub%3Dpubmed&
-[4] https://www.sciencedirect.com/science/article/pii/S1532046415000969
-[5] https://jamanetwork.com/journals/jama/fullarticle/1104511
-[6] https://www.sciencedirect.com/science/article/abs/pii/S0169260717313998?via%3Dihub
-[7] https://www.sciencedirect.com/science/article/abs/pii/S089543560100395X
-[8] https://www.tandfonline.com/doi/full/10.1080/01969722.2016.1276772
-[9] https://www.sciencedirect.com/science/article/abs/pii/S0925231219304564
-[10] https://link.springer.com/article/10.1007/s00521-017-3242-y
-[11] https://www.sciencedirect.com/science/article/abs/pii/S0957417415003085
-[12] https://www.sciencedirect.com/science/article/abs/pii/S0169260718308083
-[13] https://www.sciencedirect.com/science/article/abs/pii/S0010482518302567
-[14] https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0195024
-[15] https://link.springer.com/chapter/10.1007/978-3-319-21009-4_51
+[1] https://www.hindawi.com/journals/bmri/2014/781670/  \ 
+[2] https://www.hindawi.com/journals/bmri/2019/8532892/ \
+[3] https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2014.0041url_ver=Z39.882003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub%3Dpubmed& \
+[4] https://www.sciencedirect.com/science/article/pii/S1532046415000969 \
+[5] https://jamanetwork.com/journals/jama/fullarticle/1104511 \
+[6] https://www.sciencedirect.com/science/article/abs/pii/S0169260717313998?via%3Dihub \
+[7] https://www.sciencedirect.com/science/article/abs/pii/S089543560100395X \
+[8] https://www.tandfonline.com/doi/full/10.1080/01969722.2016.1276772 \
+[9] https://www.sciencedirect.com/science/article/abs/pii/S0925231219304564 \
+[10] https://link.springer.com/article/10.1007/s00521-017-3242-y \
+[11] https://www.sciencedirect.com/science/article/abs/pii/S0957417415003085 \
+[12] https://www.sciencedirect.com/science/article/abs/pii/S0169260718308083 \
+[13] https://www.sciencedirect.com/science/article/abs/pii/S0010482518302567 \
+[14] https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0195024 \
+[15] https://link.springer.com/chapter/10.1007/978-3-319-21009-4_51 \
 [16] http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.259.3757&rep=rep1&type=pdf
