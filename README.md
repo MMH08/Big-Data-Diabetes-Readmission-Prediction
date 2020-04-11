@@ -37,10 +37,14 @@ As we already mentioned that we have some features having values in text, so we 
 The language for this project would be Python and the most widely used, flexible and user-friendly scikit-learn machine learning library and pandas dataframe will be utilized to build the models. The Logistic Regression (LR), Decision Tree (DT) and Random Forest (RF) algorithms will be used to predict. 
 
 # Results and Discussion
-
+The dataset has been split into 70% for training and 30% for testing. 
+## Imbalanced Data
 ![cm_lg](/Figure/con_mat_lr.png)
 ![cm_lg](/Figure/con_mat_dt.png)
 ![cm_lg](/Figure/con_mat_rdf.png)
+
+## Balanced Data
+
 # Conclusion
 
 
