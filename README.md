@@ -21,11 +21,12 @@ Details of data set and methods have been described in the material and methods 
 A 10 years of clinical care diabetic dataset, over the period between 1999 to 2008 throughout 130 USA hospitals, has been used in this project. It was collected by the Health Facts database (CERNER Corporation, Kansas City, MO). As the actual data is gathered by integrated delivery network health systems, so it includes all patient’s information. So, for specific interest it was required to extract new dataset from the database following some specific criteria. It will not be done in this project as our data source already done it. 
 
 There are 101766 encounters with total feature 50 containing both numerical and categorical in types.  We have three target class: the patients readmitted before 30 days (Class 0), after 30 days (Class 1) or did not admit at all (Class 2) after discharge from hospital. 
-The database contains missing value, irrelevant and noisy information which is normal in any real-world data, therefore all the features and encounters will be used to make model.  
 
 Details of dataset can be found in [1] and available in online https://www.hindawi.com/journals/bmri/2014/781670/ (as a Supplementary Material) and UCI Machine Learning Repository  (https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008). 
 
 ## Data Preprocessing
+The database contains missing value, irrelevant and noisy information which is normal in any real-world data, therefore all the features and encounters will be used to make model. 
+
 The identifier feathers such as encounter_id and patient_nbr will be avoided. We have put a 30% threshold of missing value, so any features having more than 30% missing values will not be escaped from feature list. Features having more than 30% missing values have been filled with 0.  The features weight (97%), payer code (40%), and medical specialty (47%) were removed since it had a high percentage of missing values.  Some features (examide, citoglipton and glimepiride-pioglitazone) have only one value, as constant value does not contribute to predict anything, so we avoided those features also. 
 
 In our dataset some patients were transferred to another unit or department in same hospital and so they were encountered several times although their patient_nbr remain same.  Thus, multiple inpatient visitors from our dataset will not be considered to follow statistically independence of the data. Therefore, only first encounter per patient will be kept. Additionally, we have removed all encounters are either expired or discharge to a hospice to avoid biasing our analysis.  
