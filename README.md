@@ -47,6 +47,10 @@ The dataset has been split into 70% for training and 30% for testing.
 ## With and without sampling comparison
 ![](/Figure/Results.PNG)
 
+## Feature Importance
+![](/Figure/Feature_Importance_Logistic.PNG)
+![](/Figure/Feature_Importance_Forest.PNG)
+
 ## Balanced Data
 
 # Conclusion
