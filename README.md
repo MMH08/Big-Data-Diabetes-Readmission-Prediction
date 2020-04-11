@@ -51,6 +51,9 @@ The dataset has been split into 70% for training and 30% for testing.
 ![](/Figure/Feature_Importance_Logistic.PNG)
 ![](/Figure/Feature_Importance_Forest.PNG)
 
+## Correlation Matrix
+![](/Figure/Correlation_Matrix.PNG)
+
 ## Balanced Data
 
 # Conclusion
