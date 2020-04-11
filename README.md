@@ -38,6 +38,7 @@ The language for this project would be Python and the most widely used, flexible
 
 # Results and Discussion
 
+![cm_lg](/Figure/con_mat_dt.png)
 # Conclusion
 
 
