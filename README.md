@@ -10,14 +10,14 @@ The complex relationship between readmission and potential risk factors makes re
 
 Readmission prediction has been tackled with diverse statistical approaches [5, 6] such as logistic regression [7, 8] and survival analysis [9].  Recently, huge attention has been given to reduce hospital readmission rate using predictive machine learning approaches, such as a binary classification problem [8, 10], support vector machines (SVM) [4, 11, 12], deep learning [13, 14], artificial neural network [7], and Naïve Bayes [5, 15].  
 
-Despite this long history of studies about hospital readmission for adult patients such as for stoke [7], emergency patients [8, 9, 10], heart failure [5, 11], pediatric patients [2, 15]. There are a few studies devoted to readmission of diabetic patients [1, 12, 16]. But, a very small amount of data has been used in [12, 16] for analysis. The importance of a specific feature (HbA1c) has been discussed in [1].  
+Despite this long history of studies about hospital readmission for adult patients such as for stoke [7], emergency patients [8, 9, 10], heart failure [5, 11], pediatric patients [2, 15]. There are a few studies devoted to readmission of diabetic patients [1, 12, 16]. However, a very small amount of data has been used in [12, 16] for their analysis. The importance of a specific feature (HbA1c) has been discussed in [1].  
 
 In this project, we will use 10 years diabatic data sets to model the patients who are most likely to readmit to hospital. Our tools will facilitate the identification of patients potentially at high risk to reduce readmission rate so that resources can be used more efficiently in terms of cost-benefit.
 
 Details of data set and methods have been described in the material and methods section. In the Result and discussion, we explain performance of each model for both balance and imbalance data set. After that a short conclusion and future work will be presented. Last section will be references. 
 
 # Materials and Methods
-## Data Description: 
+## Data Description
 A 10 years of clinical care diabetic dataset, over the period between 1999 to 2008 throughout 130 USA hospitals, has been used in this project. It was collected by the Health Facts database (CERNER Corporation, Kansas City, MO). As the actual data is gathered by integrated delivery network health systems, so it includes all patient’s information. So, for specific interest it was required to extract new dataset from the database following some specific criteria. It will not be done in this project as our data source already done it. 
 
 There are 101766 encounters with total feature 50 containing both numerical and categorical in types.  We have three target class: the patients readmitted before 30 days (Class 0), after 30 days (Class 1) or did not admit at all (Class 2) after discharge from hospital. 
@@ -25,7 +25,7 @@ The database contains missing value, irrelevant and noisy information which is n
 
 Details of dataset can be found in [1] and available in online https://www.hindawi.com/journals/bmri/2014/781670/ (as a Supplementary Material) and UCI Machine Learning Repository  (https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008). 
 
-## Data Preprocessing: 
+## Data Preprocessing
 The identifier feathers such as encounter_id and patient_nbr will be avoided. We have put a 30% threshold of missing value, so any features having more than 30% missing values will not be escaped form feature list. Features having more than 30% missing values have bill filled with 0.  The features eight (97%), payer code (40%), and medical specialty (47%) was removed since it had a high percentage of missing values.  Some features (examide, citoglipton and glimepiride-pioglitazone) have only one value, as constant value does not contribute to predict anything, so we avoided those features also. 
 
 In our dataset some patients were transfer to another unit or department in same hospital and so they were encountered several times although their patient_nbr remain same.  Thus, multiple inpatient visitors from our dataset will not be considered to follow statistically independence of the data. Therefore, only first encounter per patient will be kept. Additionally, we have removed all encounters are either expired or discharge to a hospice to avoid biasing our analysis.  
@@ -35,6 +35,11 @@ As we already mentioned that we have some features having values in text, so we 
 
 ## Technologies and algorithms
 The language for this project would be Python and the most widely used, flexible and user-friendly scikit-learn machine learning library and pandas dataframe will be utilized to build the models. The Logistic Regression (LR), Decision Tree (DT) and Random Forest (RF) algorithms will be used to predict. 
+
+# Results and Discussion
+
+# Conclusion
+
 
 # References
 
