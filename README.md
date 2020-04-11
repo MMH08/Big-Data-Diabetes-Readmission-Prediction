@@ -17,21 +17,24 @@ In this project, we will use 10 years diabatic data sets to model the patients w
 Details of data set and methods have been described in the material and methods section. In the Result and discussion, we explain performance of each model for both balance and imbalance data set. After that a short conclusion and future work will be presented. Last section will be references. 
 
 # Materials and Methods
-## Dataset
-A 10 years of clinical care diabetic dataset from the Health Facts database (CERNER Corporation, Kansas City, MO) is used in this project. Initially, the data was collected by Center for Clinical and Translational Research, Virginia Commonwealth University on behalf of CERNER throughout 130 USA hospitals and integrated delivery networks over the period between 1999 to 2008. As the the actual data is gathered by integrated delivery network health systems, so it includes all patients information. So, for specific interest it was required to extract new dataset from the database by following some specific criteria. For our purpose, the following criterion are considered to get new dataset:
+## Data Description: 
+A 10 years of clinical care diabetic dataset, over the period between 1999 to 2008 throughout 130 USA hospitals, has been used in this project. It was collected by the Health Facts database (CERNER Corporation, Kansas City, MO). As the actual data is gathered by integrated delivery network health systems, so it includes all patient’s information. So, for specific interest it was required to extract new dataset from the database following some specific criteria. It will not be done in this project as our data source already done it. 
 
-1. it is an inpatient encounter (a hospital admission),
-2. it is a diabetic encounter, that is, one during which any kind of diabetes was entered to the system as a diagnosis,
-3. the length of stay was at least 1 day and at most 14 days,
-4. laboratory tests were performed during the encounter,
-5. medications were administered during the encounter.
+There are 101766 encounters with total feature 50 containing both numerical and categorical in types.  We have three target class: the patients readmitted before 30 days (Class 0), after 30 days (Class 1) or did not admit at all (Class 2) after discharge from hospital. 
+The database contains missing value, irrelevant and noisy information which is normal in any real-world data, therefore all the features and encounters will be used to make model.  
 
-Using above 5 criterion, the obtained dataset contain 101,766 encounters for to analyze factors related to readmission as well as other outcomes pertaining to patients with diabetes. From the information available in the database, 55 features that describe the diabetic encounters were picked. The few of the attributes are patient number, race, gender, age, admission type, duration of stay in hospital, lab test, HbA1c test result, diagnosis, number of medication, diabetic medications. 
+Details of dataset can be found in [1] and available in online https://www.hindawi.com/journals/bmri/2014/781670/ (as a Supplementary Material) and UCI Machine Learning Repository  (https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008). 
 
-In our project, we will be using this new dataset and details of data can be found our  reference paper [1]. The dataset is available in online https://www.hindawi.com/journals/bmri/2014/781670/ (as a Supplementary Material) and UCI Machine Learning Repository  (https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008). 
+## Data Preprocessing: 
+The identifier feathers such as encounter_id and patient_nbr will be avoided. We have put a 30% threshold of missing value, so any features having more than 30% missing values will not be escaped form feature list. Features having more than 30% missing values have bill filled with 0.  The features eight (97%), payer code (40%), and medical specialty (47%) was removed since it had a high percentage of missing values.  Some features (examide, citoglipton and glimepiride-pioglitazone) have only one value, as constant value does not contribute to predict anything, so we avoided those features also. 
+
+In our dataset some patients were transfer to another unit or department in same hospital and so they were encountered several times although their patient_nbr remain same.  Thus, multiple inpatient visitors from our dataset will not be considered to follow statistically independence of the data. Therefore, only first encounter per patient will be kept. Additionally, we have removed all encounters are either expired or discharge to a hospice to avoid biasing our analysis.  
+Finally, we will have 69973 encounters with 42 features. 
+
+As we already mentioned that we have some features having values in text, so we have encoded those categorical data to numerical data. We have also found that frequency of the values some features are just 1 or small and we used binning to reduce those noise from features.  Our data has been scaled by standardization scaling. As the dataset is imbalanced, so oversampled technique has been applied to make data balanced. 
 
 ## Technologies and algorithms
-The most widely used, fast, flexible and user friendly cluster-computing framework, Apache Spark, will be utilized to run. The language for this project would be Python. The Multivariable Logistic Regression (MLR) and Random Forest (RF) algorithms will be used to fit the relationship between the measurement of HbA1c and type of readmission. MLR is easy to implement and RF is perfect for both cluster-computing and parallel-computing as each tree is independent each others and can run independently. We will also evaluate both of these algorithms. 
+The language for this project would be Python and the most widely used, flexible and user-friendly scikit-learn machine learning library and pandas dataframe will be utilized to build the models. The Logistic Regression (LR), Decision Tree (DT) and Random Forest (RF) algorithms will be used to predict. 
 
 # References
 
