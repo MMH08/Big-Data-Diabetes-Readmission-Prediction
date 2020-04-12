@@ -10,7 +10,8 @@ The complex relationship between readmission and potential risk factors makes re
 
 Readmission prediction has been tackled with diverse statistical approaches [5, 6] such as logistic regression [7, 8] and survival analysis [9].  Recently, huge attention has been given to reduce hospital readmission rate using predictive machine learning approaches, such as a binary classification problem [8, 10], support vector machines (SVM) [4, 11, 12], deep learning [13, 14], artificial neural network [7], and Naïve Bayes [5, 15].  
 
-Despite this long history of studies about hospital readmission for adult patients such as for stoke [7], emergency patients [8, 9, 10], heart failure [5, 11], pediatric patients [2, 15]. There are a few studies devoted to readmission of diabetic patients [1, 12, 16]. However, a very small amount of data has been used in [12, 16] for their analysis. The importance of a specific feature (HbA1c) has been discussed in [1].  
+Despite this long history of studies about hospital readmission for adult patients such as for stoke [7], emergency patients [8, 9, 10], heart failure [5, 11], pediatric patients [2, 15]. There are a few studies devoted to readmission of diabetic patients [1, 12, 16], although diabetics patients have more tendency to readmit in the hospital which is around 9.3% of the total patients in US and 28% of which are undiagnosed [17, 18]. A very small amount of data has been used in [12, 16] for analysis, where as the importance of a specific feature (HbA1c) has been discussed in [1]. 
+
 
 In this project, we will use 10 years diabetic data sets to model the patients who are most likely to readmit to hospital. Our tools will facilitate the identification of patients potentially at high risk to reduce readmission rate so that resources can be used more efficiently in terms of cost-benefit.
 
@@ -76,4 +77,6 @@ For future works, in case our dataset size grows and doesn’t fit in the memory
 [13] https://www.sciencedirect.com/science/article/abs/pii/S0010482518302567 <br />
 [14] https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0195024 <br />
 [15] https://link.springer.com/chapter/10.1007/978-3-319-21009-4_51 <br />
-[16] http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.259.3757&rep=rep1&type=pdf
+[16] http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.259.3757&rep=rep1&type=pdf <br />
+[17] https://www.cdc.gov/diabetes/data/statistics/statistics-report.htmlCDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fdiabetes%2Fdata%2Fstatistics%2F2014statisticsreport.html <br />
+[18] https://clindiabetesendo.biomedcentral.com/articles/10.1186/s40842-016-0040-x
