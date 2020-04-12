@@ -44,15 +44,14 @@ To measure model performance, we apply 6 types of metrics: best_cv_score, mean_c
 
 ## Imbalanced Data
 ![cv_scor](/Figure/cv_score.png) 
-*Table:1*
-
-Table 1: shows the accuracy from k-fold cross validation of the models. First and second rows are the score form the best parameters and mean accuracy among 5 folds respectively. 
+Table 1 shows the accuracy from k-fold cross validation of the models. First and second rows are the score form the best parameters and mean accuracy among 5 folds respectively. For both DT and RDF, k-fold suggested ‘max_depth = 10’.
 
 ![imb_ac_10](/Figure/imb_accuracy_10.png)
-
+Table 2 represents training and test accuracy of the models.  
 ![cm_lg](/Figure/imb_con_mat_lr.png)
 ![cm_dt_10](/Figure/imb_con_mat_dt_10.png)
-![cm_rdf_10](/Figure/imb_con_mat_rdf_10.png)
+![cm_rdf_10](/Figure/imb_con_mat_rdf_10.png#center)
+These confusion matrix shows 
 
 ![imb_ac_30](/Figure/imb_accuracy_30.png)
 ![cm_dt_30](/Figure/imb_con_mat_dt_30.png)
