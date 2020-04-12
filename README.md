@@ -40,22 +40,30 @@ The language for this project would be Python and the most widely used, flexible
 # Results and Discussion
 The dataset has been split into 70% for training and 30% for testing. 
 ## Imbalanced Data
-![cm_lg](/Figure/con_mat_lr.png)
-![cm_lg](/Figure/con_mat_dt.png)
-![cm_lg](/Figure/con_mat_rdf.png)
+![cv_scor](/Figure/cv_score.png)
+![imb_ac_10](/Figure/imb_accuracy_10.png)
+
+![cm_lg](/Figure/imb_con_mat_lr.png)
+![cm_dt_10](/Figure/imb_con_mat_dt_10.png)
+![cm_rdf_10](/Figure/imb_con_mat_rdf_10.png)
+
+![imb_ac_30](/Figure/imb_accuracy_30.png)
+![cm_dt_30](/Figure/imb_con_mat_dt_30.png)
+![cm_rdf_30](/Figure/imb_con_mat_rdf_30.png)
+
+## Balanced Data
+![bl_ac](/Figure/bl_accuracy.png)
+
+![cm_lg](/Figure/bl_con_mat_lr.png)
+![cm_dt](/Figure/bl_con_mat_dt_30.png)
+![cm_rdf](/Figure/bl_con_mat_rdf_30.png)
 
 
-## With and without sampling comparison
-![](/Figure/Results.PNG)
-
+<!---
 ## Feature Importance
 ![](/Figure/Feature_Importance_Logistic.PNG)
 ![](/Figure/Feature_Importance_Forest.PNG)
-
-## Correlation Matrix
-![](/Figure/Correlation_Matrix.PNG)
-
-
+--->
 # Conclusion
 For future works, in case our dataset size grows and doesn’t fit in the memory, and includes other patient history as well, we can use Apache spark for better computation power and faster processing. We can even try to use Neural networks to further improve the model performance.
 
