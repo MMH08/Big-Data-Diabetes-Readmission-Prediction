@@ -53,7 +53,9 @@ Table 2 represents training and test accuracy of the models. It seems that all t
 ![cm_dt_10](/Figure/imb_con_mat_dt_10.png)
 ![cm_rdf_10](/Figure/imb_con_mat_rdf_10.png#center)
 
-These three figures represent confusion matrix of test dataset when ‘max_depth’ depth is 10.  We observe that all the model performs poorly for Class 0, even in RDF there is no prediction for Class 0.  We also see a slightly better prediction for Class 1 compare to Class 0, which tells us that the overall accuracy mostly depends on Class 2, so it is clearly due to imbalanced dataset because the results are biased on Class 2. In our datasets, the ratio between Class 0: Class 1: Class 2 is 1: 3.4:6.6.  Data resample may apply to improve the performance as both DT and RDF support data resampling. Before making data resampling, we have made a try first to change max_depth from 10 to 30 for DT and RDF to see if it can help to improve our model accuracy.
+These three figures represent confusion matrix of test dataset when ‘max_depth’ depth is 10.  We observe that all the model performs poorly for Class 0, even in RDF there is no prediction for Class 0.  We also see a slightly better prediction for Class 1 compare to Class 0, which tells us that the overall accuracy mostly depends on Class 2, so it is clearly due to imbalanced dataset because the results are biased on Class 2. 
+
+In our datasets, the ratio between Class 0: Class 1: Class 2 is 1: 3.4:6.6.  Data resample may apply to improve the performance as both DT and RDF support data resampling. Before making data resampling, we have made a try first to change max_depth from 10 to 30 for DT and RDF to see if it can help to improve our model accuracy.
 
 ![cm_dt_30](/Figure/imb_con_mat_dt_30.png)
 ![cm_rdf_30](/Figure/imb_con_mat_rdf_30.png#center)
@@ -61,9 +63,10 @@ These three figures represent confusion matrix of test dataset when ‘max_depth
 These are figures are showing confusion matrix for DT and RDF with ‘max_depth = 30’. It seems  increasing max_depth did not help at too much. 
 
 ![imb_ac_30](/Figure/imb_accuracy_30.png)
-However, this accuracy Table gives interesting information training accuracy are really promising which are above 90% in both DT and RDF, on the other hand test performance is still disappointing. 
+However, the accuracy Table gives the interesting information where training accuracy are really promising which are above 95% in both DT and RDF model, on the other hand test performance is still disappointing. This information suggests us that the results are overfitting. We can avoid overfitting; by adding more data into dataset or by adding regularization term in the model. Thus, in both cases, imbalanced and overfitting, data resample can be applied to overcome the problems. 
 
 ## Balanced Data
+Our second approach is resampling dataset. We use upscale resampling technique as it is straight forward to make data balanced. 
 ![bl_ac](/Figure/bl_accuracy.png)
 
 ![cm_lg](/Figure/bl_con_mat_lr.png)
