@@ -67,13 +67,14 @@ However, the accuracy Table gives the interesting information where training acc
 
 ## Balanced Data
 Our second approach is resampling dataset. We use upscale resampling technique as it is straight forward to make data balanced. After resampling our current ratio is Class 0: Class 1: Class 2 = 0.9 : 0.9 : 1.0.
+
 ![bl_ac](/Figure/bl_accuracy.png)
 
 ![cm_lg](/Figure/bl_con_mat_lr.png)
 ![cm_dt](/Figure/bl_con_mat_dt_30.png)
 ![cm_rdf](/Figure/bl_con_mat_rdf_30.png)
 
-After analyzing both table and confusion matrix, it suggests that resampling is giving us mixed results. For Logistic regression model, it seems performance went downward which around 42 in all the metrics. On the other hand, Decision Tree has made satisfactory progress but seems still have reasonable overfitting issue but can be resolve by regularization or by using other resampling techniques. However, Random Forest is showing very encouraging outcome and has also handled those two issues adequately.  So, Random Forest can be the best choice to predict the patient’s class. 
+After analyzing both table and confusion matrix, it suggests that resampling is giving us mixed results. For Logistic regression model, it seems performance went downward which around 42% in all the metrics.  On the other hand, Decision Tree has made satisfactory progress (77%) but seems still have reasonable overfitting issue but can be resolve by regularization or by using other resampling techniques. However, Random Forest is showing very encouraging outcome and has also handled those two issues adequately.  Random Forest has scored over 85% of accuracy and therefore, it can be the best choice to select model to predict the patient’s class. 
 
 <!---
 ## Feature Importance
