@@ -43,7 +43,9 @@ Dataset have been split in to 70% to train the models and 30% to evaluate model 
 To measure model performance, we apply 6 types of metrics: best_cv_score, mean_cv_score, accuracy_score, recall_score, precision_score and f1_score.  We have also used Confusion Matrix (CM) to analysis class wise accuracy.  Finally, we have brief explanation of feature importance of the models. 
 
 ## Imbalanced Data
-![cv_scor](/Figure/cv_score.png) 
+<img src="/Figure/cv_score.png" width="600" height="140" />
+
+<!--- ![cv_scor](/Figure/cv_score.png) --->
 Table 1 shows the accuracy from k-fold cross validation of the models. First and second rows are the score form the best parameters and mean accuracy among 5 folds respectively. For both DT and RDF, k-fold suggested ‘max_depth = 10’.
 
 ![imb_ac_10](/Figure/imb_accuracy_10.png)
