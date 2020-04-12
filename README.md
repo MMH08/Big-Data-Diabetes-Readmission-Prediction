@@ -38,9 +38,14 @@ As we already mentioned that we have some features having values in text, so we 
 The language for this project would be Python and the most widely used, flexible and user-friendly scikit-learn machine learning library and pandas dataframe will be utilized to build the models. The Logistic Regression (LR), Decision Tree (DT) and Random Forest (RF) algorithms will be used for prediction. We used the Scikit learn library and not the spark framework because we did not require a lot of computation power as our dataset size could fit in the memory. We chose Logistic Regression and Random Forest because the other classification techniques such as K-nearest neighbours, Stochastic gradient descent and Naive Bayes were not as efficient in terms of model performance in our application.
 
 # Results and Discussion
-The dataset has been split into 70% for training and 30% for testing. 
+Dataset have been split in to 70% to train the models and 30% to evaluate model performance.  The results from both balanced and imbalanced datasets will be present and explained. The hyperparameters of models have been calculated using k-fold cross validation process, where k is selected as 5. Same parameters for individual model are used for both cases. 
+
+To measure model performance, we apply 6 types of metrics: best_cv_score, mean_cv_score, accuracy_score, recall_score, precision_score and f1_score.  We have also used Confusion Matrix (CM) to analysis class wise accuracy.  Finally, we have brief explanation of feature importance of the models. 
+
 ## Imbalanced Data
 ![cv_scor](/Figure/cv_score.png)
+This Table 1: shows the accuracy from k-fold cross validation of the models. First and second rows are the score form the best parameters and mean accuracy among 5 folds respectively. 
+
 ![imb_ac_10](/Figure/imb_accuracy_10.png)
 
 ![cm_lg](/Figure/imb_con_mat_lr.png)
