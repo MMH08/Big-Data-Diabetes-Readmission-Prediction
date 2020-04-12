@@ -47,15 +47,17 @@ To measure model performance, we apply 6 types of metrics: best_cv_score, mean_c
 Table 1 shows the accuracy from k-fold cross validation of the models. First and second rows are the score form the best parameters and mean accuracy among 5 folds respectively. For both DT and RDF, k-fold suggested ‘max_depth = 10’.
 
 ![imb_ac_10](/Figure/imb_accuracy_10.png)
-Table 2 represents training and test accuracy of the models.  
+Table 2 represents training and test accuracy of the models. It seems that all the models have an average performance and no significant difference are observed among the models. 
+
 ![cm_lg](/Figure/imb_con_mat_lr.png)
 ![cm_dt_10](/Figure/imb_con_mat_dt_10.png)
 ![cm_rdf_10](/Figure/imb_con_mat_rdf_10.png#center)
-These confusion matrix shows 
+
+These three figures represent confusion matrix of imbalanced results when ‘max_depth’ depth is 10.  We observe that all the model performs poorly for Class 0, even in RDF there is no prediction for Class 0.
 
 ![imb_ac_30](/Figure/imb_accuracy_30.png)
 ![cm_dt_30](/Figure/imb_con_mat_dt_30.png)
-![cm_rdf_30](/Figure/imb_con_mat_rdf_30.png)
+![cm_rdf_30](/Figure/imb_con_mat_rdf_30.png#center)
 
 ## Balanced Data
 ![bl_ac](/Figure/bl_accuracy.png)
