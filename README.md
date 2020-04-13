@@ -1,7 +1,7 @@
 # Diabetes Readmission Prediction
 
 # Abstract
-A diabetic clinical dataset is used to identify the patients who are in risk for readmission to the hospital by using predictive models.  A supervised learning approach for 3-class classification problem will be applied to identify the patients of target classes are the patients readmitted before 30 days (Class 0) , after 30 days (Class 1) or did not admit at all (Class 2) after discharge from hospital. The Logistic Regression (LR), Decision Tree (DT) and Random Forest (RF) algorithms will be used to fit the relationship. We will also evaluate the performance among the algorithms to pick best one. Python, scikit-learn machine learning library, pandas dataframe will be utilized to build the models.
+A 10 years of diabetic clinical dataset is used to identify the patients who are in risk for readmission to the hospital by using predictive models.  A supervised learning approach for 3-class classification problem will be applied to identify the patients of target classes are the patients readmitted before 30 days (Class 0) , after 30 days (Class 1) or did not admit at all (Class 2) after discharge from hospital. The Logistic Regression (LR), Decision Tree (DT) and Random Forest (RF) algorithms will be used to fit the relationship. We will also evaluate the performance among the algorithms to pick best one. Python, scikit-learn machine learning library, pandas dataframe will be utilized to build the models.
 
 # Introduction
 When a patient is admitted again into a hospital within a certain interval of time after discharge from hospital is called hospital readmission. It is very important as hospital readmission rate can be a major indicator of patient’s health and life, hospital quality and cost of treatment. For example, if a patient was never been re-admitted, it’s a very good sign. Whereas if the patient is re-admitted within the 30 days of discharge represents a possibility of inappropriate treatment. On the other hand, getting readmitted after 30 days can indicate both the quality of treatment given and/or the state of the patient. 
@@ -84,7 +84,12 @@ After analyzing both table and confusion matrix, it suggests that resampling is 
 ![](/Figure/Feature_Importance_Forest.PNG)
 --->
 # Conclusion and Future Work
-For future works, in case our dataset size grows and doesn’t fit in the memory, and includes other patient history as well, we can use Apache spark for better computation power and faster processing. We can even try to use Neural networks to further improve the model performance.
+Readmission rate is an indicator of patient’s health and life, hospital quality and cost of treatment. In this project, we started our journey with 10 years of diabetic clinical dataset to identify who are the most likely to readmit after discharge from hospital. We have used a supervised learning approach for 3-class classification problem and applied Logistic Regression (LR), Decision Tree (DT) and Random Forest (RDF) classifiers as prediction models.  We have taken care of over 100K samples with 50 features. We have avoided some of the features and samples which were irrelevant to make our prediction model.  We have also encoded categorical features, bucketed, rescaled and resampled of our dataset.  The model performance for individual patient’s class was not satisfactory due to imbalanced dataset and resampling technique was applied to make dataset balanced.  After analyzing all the accuracy tables and confusion matrix among the models, Random Forest would be the best choice to select model to predict the patient’s class.
+
+We have used data duplication technique for oversampling but can be applied more standard and reliable techniques such as SMOTE. Although, there was no computational difficulty to run the model due to our data size but can be extended to cluster and parallel computing framework such as Apache and Dask for faster processing when data size will grow bigger.   
+
+# Acknowledgment
+Thanks to Professor for his advice and comments both the class and online about the course and the project.  Also thanks all the TA’s and their Lab session was great that helped me to write the code for this project. Moreover, we enjoyed and learned a lot from this course.
 
 # References
 
