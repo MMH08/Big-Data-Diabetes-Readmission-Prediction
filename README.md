@@ -92,7 +92,7 @@ We have used data duplication technique for oversampling but can be applied more
 Thanks to Professor for his advice and comments both the class and online about the course and the project.  Also thanks all the TA’s and their Lab session was great that helped me to write the code for this project. Moreover, we enjoyed and learned a lot from this course.
 
 # References
-
+**** Data Scinece: https://www.youtube.com/watch?v=AO5uhxa1R84&list=UUwk47V1XafOrw83d_vwwGhg
 [1] https://www.hindawi.com/journals/bmri/2014/781670/  <br />
 [2] https://www.hindawi.com/journals/bmri/2019/8532892/ <br />
 [3]https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2014.0041url_ver=Z39.882003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub%3Dpubmed& <br />
